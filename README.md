@@ -19,15 +19,17 @@ Time spent: **X** hours spent in total
   - [x] Affected source code:
     - [Link 1](https://blog.checkpoint.com/2015/09/15/finding-vulnerabilities-in-core-wordpress-a-bug-hunters-trilogy-part-iii-ultimatum/)
 
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+1. (Required) Vulnerability Name or ID: Unauthenticated Stored Cross-Site Scripting CVE-2015-3438
+  - [x] Summary: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.0
+    - Fixed in version: 4.1.2
+  - [ ] GIF Walkthrough: <img src="XSS2.gif" width="800">
+  - [ ] Steps to recreate: Create a new post or go to an existing post. Scroll to the comment box and add the following to the body:
+  ```<backquote cite="hey" onmouseover=alert("uh-oh")>testing xss 2```
+  - [x] Affected source code: 
+    - [Link 1](https://core.trac.wordpress.org/browser/tags/4.0.16/src/wp-comments-post.php)
+
 1. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:

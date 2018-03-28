@@ -12,25 +12,22 @@ Time spent: **X** hours spent in total
     - Tested in version: 4.2
     - Fixed in version: 4.3.1
   - [x] GIF Walkthrough: <img src="XSS1.gif" width="800"> 
-  - [x] Steps to recreate: Navigate to the side navigation menu. Click "Posts", and make a new post. Add the following to the body: 
-```
-  <p>XSS Test 1<figure style="width: 1px;" class="wp-caption alignnone"><figcaption class="wp-caption-text"><a href="</figcaption></figure></a><a href="http://onMouseOver='alert(1)'">Hover here</a></p>
-```
+  - [x] Steps to recreate: Navigate to the side navigation menu. Click "Posts", and make a new post. Add the following to the body: ```<p>XSS Test 1<figure style="width: 1px;" class="wp-caption alignnone"><figcaption class="wp-caption-text"><a href="</figcaption></figure></a><a href="http://onMouseOver='alert(1)'">Hover here</a></p>```
   - [x] Affected source code:
     - [Link 1](https://blog.checkpoint.com/2015/09/15/finding-vulnerabilities-in-core-wordpress-a-bug-hunters-trilogy-part-iii-ultimatum/)
 
-1. (Required) Vulnerability Name or ID: Unauthenticated Stored Cross-Site Scripting CVE-2015-3438
+2. (Required) Vulnerability Name or ID: Unauthenticated Stored Cross-Site Scripting CVE-2015-3438
   - [x] Summary: 
     - Vulnerability types: XSS
     - Tested in version: 4.0
     - Fixed in version: 4.1.2
-  - [ ] GIF Walkthrough: <img src="XSS2.gif" width="800">
-  - [ ] Steps to recreate: Create a new post or go to an existing post. Scroll to the comment box and add the following to the body:
+  - [x] GIF Walkthrough: <img src="XSS2.gif" width="800">
+  - [x] Steps to recreate: Create a new post or go to an existing post. Scroll to the comment box and add the following to the body:
   ```<backquote cite="hey" onmouseover=alert("uh-oh")>testing xss 2```
   - [x] Affected source code: 
     - [Link 1](https://core.trac.wordpress.org/browser/tags/4.0.16/src/wp-comments-post.php)
 
-1. (Required) Vulnerability Name or ID
+3. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
     - Tested in version:

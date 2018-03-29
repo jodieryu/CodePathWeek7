@@ -28,14 +28,14 @@ Time spent: **7** hours spent in total
     - [Link 1](https://core.trac.wordpress.org/browser/tags/4.0.16/src/wp-comments-post.php)
 
 **3. (Required) Vulnerability Name or ID: Authenticated Cross-Site Scripting**
-  - [x] Summary: 
+  - [x] Summary:
     - Vulnerability types: XSS
     - Tested in version: 4.0
     - Fixed in version: 4.2.13
-  - [ ] GIF Walkthrough: <img src="XSS3.gif" width="800">
-  - [ ] Steps to recreate: Create a new post. Insert the following URL into the body:
+  - [x] GIF Walkthrough: <img src="XSS3.gif" width="800">
+  - [x] Steps to recreate: Create a new post. Insert the following URL into the body:
   ```https://youtube[.]com/watch?v=abc<svg onload=alert("test")>```
-  - [ ] Affected source code: 
+  - [x] Affected source code: 
     - [Link 1](https://github.com/WordPress/WordPress/commit/c9e60dab176635d4bfaaf431c0ea891e4726d6e0)
 
     ## Assets

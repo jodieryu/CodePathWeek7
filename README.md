@@ -1,12 +1,12 @@
 # Project 7 - WordPress Pentesting
 
-Time spent: **X** hours spent in total
+Time spent: **7** hours spent in total
 
 > Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
 
 ## Pentesting Report
 
-1. (Required) Vulnerability Name or ID: Unauthenticated Stored Cross-Site Scripting
+**1. (Required) Vulnerability Name or ID: Authenticated Stored Cross-Site Scripting**
   - [x] Summary: 
     - Vulnerability types: XSS
     - Tested in version: 4.2
@@ -16,7 +16,7 @@ Time spent: **X** hours spent in total
   - [x] Affected source code:
     - [Link 1](https://blog.checkpoint.com/2015/09/15/finding-vulnerabilities-in-core-wordpress-a-bug-hunters-trilogy-part-iii-ultimatum/)
 
-2. (Required) Vulnerability Name or ID: Unauthenticated Stored Cross-Site Scripting CVE-2015-3438
+**2. (Required) Vulnerability Name or ID: Authenticated Stored Cross-Site Scripting CVE-2015-3438**
   - [x] Summary: 
     - Vulnerability types: XSS
     - Tested in version: 4.0
@@ -27,15 +27,16 @@ Time spent: **X** hours spent in total
   - [x] Affected source code: 
     - [Link 1](https://core.trac.wordpress.org/browser/tags/4.0.16/src/wp-comments-post.php)
 
-3. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+**3. (Required) Vulnerability Name or ID: Authenticated Cross-Site Scripting**
+  - [x] Summary: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.0
+    - Fixed in version: 4.2.13
+  - [ ] GIF Walkthrough: <img src="XSS3.gif" width="800">
+  - [ ] Steps to recreate: Create a new post. Insert the following URL into the body:
+  ```https://youtube[.]com/watch?v=abc<svg onload=alert("test")>```
+  - [ ] Affected source code: 
+    - [Link 1](https://github.com/WordPress/WordPress/commit/c9e60dab176635d4bfaaf431c0ea891e4726d6e0)
 
     ## Assets
 
